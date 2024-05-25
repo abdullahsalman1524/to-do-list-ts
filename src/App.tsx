@@ -22,11 +22,10 @@ const App : React.FC = () => {
     }
   }
 
-  console.log(todo)
   return (
     <div className='bg-blue-300 py-10 h-[100vh] text-4xl text-center'>Advanced To List
       <InputField todo={todo} setTodo={setTodo} handleAdd= {handleAdd} />
-      <TodoList />
+      <TodoList todos={todos} setTodos={setTodos} />
     </div>
   )
 }
